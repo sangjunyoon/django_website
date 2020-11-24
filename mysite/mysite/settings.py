@@ -74,27 +74,27 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': 'mydatabase',
-#    }
-#}
-
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'adibentleydb',
-        'USER': 'adminscuna@adi-bentley',
-        'PASSWORD': 'U2fromKorea?',
-        'HOST': 'tcp:adi-bentley.database.windows.net',
-        'PORT': '1433',
-        'OPTION': {
-            'driver':'ODBC Driver 13 for SQL Server',
-            'MARS_Connection': 'True',
-        },
-    },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+    }
 }
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'sql_server.pyodbc',
+#        'NAME': 'adibentleydb',
+#        'USER': 'adminscuna@adi-bentley',
+#        'PASSWORD': 'U2fromKorea?',
+#        'HOST': 'tcp:adi-bentley.database.windows.net',
+#        'PORT': '1433',
+#        'OPTION': {
+#            'driver':'ODBC Driver 13 for SQL Server',
+#            'MARS_Connection': 'True',
+#        },
+#    },
+#}
 
 
 # Password validation
